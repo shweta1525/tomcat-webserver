@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull'){
             steps {
-                echo 'pull successful'
+                git 'https://github.com/shwetabawane/tomcat-webserver.git'
             }  
         }
         stage('build'){
